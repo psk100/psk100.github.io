@@ -4,6 +4,7 @@
 	<title>Snake Game</title>
 	<h1>GitHub Hosted Webside</h2>
 	<h2>Snake Game</h1>
+	<h2 id="scores">Scores</h2>
 	<style>
 		html,
 		body {
@@ -22,6 +23,9 @@
 		canvas {
 			border: 2px solid white;
 		}
+		#scores{
+			color:blue;
+		}
 		h1{
 color:red;
 }
@@ -37,7 +41,7 @@ color:green;
 	<script>
 		var canvas = document.getElementById('game');
 		var context = canvas.getContext('2d');
-
+		var score = 0;
 		var grid = 16;
 		var snake = {
 			x: 160,
@@ -111,6 +115,10 @@ color:green;
 
 					apple.x = getRandomInt(0, 25) * grid;
 					apple.y = getRandomInt(0, 25) * grid;
+					score+=10;
+					document.getElementById("scores").innerHTML = "Scores : " + score;	
+
+
 				}
 
 				// check collision with all cells after this one (modified bubble sort)
