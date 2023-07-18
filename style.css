@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+    border:none;
+    outline:none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins',sans-serif;
+    }
+body .h1{
+    align-items: center;
+}
+
+.gamelist{
+
+    color:black;
+}
+.gamelist .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5rem;
+
+}
+.gamelist .column{
+   
+    border: .2rem solid orange;
+}
+.gamelist .column a img{
+    
+    width: 200px;
+    height: 200px;
+}
