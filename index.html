@@ -4,7 +4,7 @@
 	<title>Snake Game</title>
 	<h1>GitHub Hosted Webside</h2>
 	<h2>Snake Game</h1>
-	<h2 id="scores">Scores</h2>
+	<h2 id="scores">Scores : 0</h2>
 	<style>
 		html,
 		body {
@@ -133,6 +133,7 @@ color:green;
 						snake.dx = grid;
 						snake.dy = 0;
 						score=0;
+						document.getElementById("scores").innerHTML = "Scores : " + score;
 						apple.x = getRandomInt(0, 25) * grid;
 						apple.y = getRandomInt(0, 25) * grid;
 					}
@@ -161,5 +162,4 @@ color:green;
 
 	</script>
 </body>
-
 </html>
